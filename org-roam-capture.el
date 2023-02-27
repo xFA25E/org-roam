@@ -320,7 +320,10 @@ streamlined user experience in Org-roam."
                                                         (string :tag "  File")
                                                         (string :tag "  Head Content")
                                                         (list :tag "Outline path"
-                                                              (repeat (string :tag "Headline"))))))
+                                                              (repeat (string :tag "Headline"))))
+                                                  (list :tag "Node"
+                                                        (const :format "" node)
+                                                        (string :tag "  Title, alias or ID"))))
                                          ((const :format "%v " :prepend) (const t))
                                          ((const :format "%v " :immediate-finish) (const t))
                                          ((const :format "%v " :jump-to-captured) (const t))
